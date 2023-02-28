@@ -1,0 +1,116 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+
+    .links{
+        display: flex;
+        
+    }
+
+    .links ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 5px;
+    
+        .link {
+           a{
+            color: $semi-black;
+            font-family: 'Inter';
+            font-size: $smal-font-size;
+            line-height: $link-line-height;
+            text-decoration: none;
+            margin-right: 10px;
+           }
+        
+        }
+        img{
+            margin-right: 10px;
+        }
+
+    }
+    .title{
+        color: $semi-black;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: $title-font-size;
+        line-height: $title-line-height;
+    }
+
+    .image-container{
+        width: 696px;
+        height: 392px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .bicycle-img{
+            width: 616;
+            height: 370;
+        }
+
+        .image-arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $light-gray;
+
+           
+        }
+       
+    }
+    .description-container ul{
+        display: flex;
+        list-style: none;
+        
+
+        .desc-link {
+            a{
+             color: $semi-black;
+             font-family: 'Inter';
+             font-size: $base-font-size;
+             line-height: $base-line-height;
+             text-decoration: none;
+             margin-right: 16px;
+            }
+         
+         }
+    }
+
+}
+.right-container{
+
+    .right-icons-container{
+        display: flex;
+        justify-content: flex-end;
+        .right-side{
+            display: flex;
+            justify-content: space-evenly;
+           .img{
+            margin-right: 10px;
+           }
+        }
+        .right-icons{
+            color: $semi-black;
+            font-size: $medium-font-size;
+            font-weight: 400;
+            line-height: $icon-line-height;
+            margin-right: 10px;
+        }
+    }
+    .details-container{
+        width: 488px;
+        height: 450px;
+        background-color: $light-gray;
+    }
+}
+}
