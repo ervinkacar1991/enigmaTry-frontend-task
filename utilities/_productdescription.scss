@@ -16,6 +16,10 @@
         font-size: $desc-title-font-size;
         line-height: $lg-line-height;
     }
+    .desc-paragraph{
+        width: 488px;
+        height: 256px;
+    }
     p{
         color: $semi-black;
         font-family: 'Inter';
@@ -34,6 +38,12 @@
             font-size: $base-font-size;
             line-height: $base-line-height;
             border: 1px solid $medium-gray;
-            cursor: pointer;
+            margin-top: 25px;
+            cursor: pointer;  
     }
+    img{
+        margin-top: 40px;
+        margin-right: 35px;
+    }
+   
 }

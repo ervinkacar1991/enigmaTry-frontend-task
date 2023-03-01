@@ -326,6 +326,10 @@
   font-size: 28px;
   line-height: 36px;
 }
+.product-desctiption-section .desc-paragraph {
+  width: 488px;
+  height: 256px;
+}
 .product-desctiption-section p {
   color: #1E1E1E;
   font-family: "Inter";
@@ -344,5 +348,60 @@
   font-size: 16px;
   line-height: 24px;
   border: 1px solid #DEDEDE;
+  margin-top: 25px;
   cursor: pointer;
+}
+.product-desctiption-section img {
+  margin-top: 40px;
+  margin-right: 35px;
+}
+
+.table-section {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  margin-top: 50px;
+  padding: 30px;
+}
+.table-section .table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.table-section h1 {
+  color: #1E1E1E;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 30px;
+  margin-left: 85px;
+}
+.table-section table {
+  border-collapse: collapse;
+  width: 88%;
+}
+.table-section table th {
+  color: #FE5E41;
+  text-align: left;
+  padding: 8px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.table-section table td {
+  color: #1E1E1E;
+  text-align: left;
+  padding: 8px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.table-section table tr:nth-child(even) {
+  background-color: #FFFFFF;
 }
