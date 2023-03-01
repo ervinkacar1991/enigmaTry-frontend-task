@@ -1,125 +1,137 @@
-.main-header{
-    
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: $orange;
+
+  @media screen and (max-width: 500px) {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
-    height: 120px;
-    background-color: $orange;
+    height: 70px;
+  }
 
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .logo{
-            margin-right: 48px;
-        }
+  .mobile {
+    display: none;
+    @media screen and (max-width: 1000px) {
+      display: block;
     }
-   
-    .main-nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .input-container{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 256px;
-            height: 56px;
-            border: 0.5px solid $light-gray;
-            border-radius: 4px 4px 0px 0px;
-            padding: 3px;
-            background-color: $light-gray;
+  }
 
-            input{
-                border: none;
-                outline: none;
-                background-color: transparent;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-                &::placeholder{
-                    font-size: $placeholder-font-size;
-                }
-               
-            }
-        }
-       
+    .logo {
+      margin-right: 48px;
     }
-    .icons-container{
-        display: flex;
-        gap: 20px;
-        line-height: $navlinks-font-size;
-        
-        .user-icon img{
-            width: 18px;
-            height: 20px;
-        }
-        .hearth-icon img{
-            width: 20px;
-            height: 20px;
-        }
-        .cart-icon{
-            width: 23px;
-            height: 20px;
-            position: relative;
+  }
 
-            .counter{
-                width: 15px;
-                height: 15px;
-                position: absolute;
-                left: 13px;
-                top: 10px;
-            }
-        }
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      display: none;
     }
-    a{
-        text-decoration: none;
+
+    .input-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 256px;
+      height: 56px;
+      border: 0.5px solid $light-gray;
+      border-radius: 4px 4px 0px 0px;
+      padding: 3px;
+      background-color: $light-gray;
+
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &::placeholder {
+          font-size: $placeholder-font-size;
+        }
+      }
+    }
+  }
+  .icons-container {
+    display: flex;
+    gap: 20px;
+    line-height: $navlinks-font-size;
+
+    .user-icon img {
+      width: 18px;
+      height: 20px;
+    }
+    .hearth-icon img {
+      width: 20px;
+      height: 20px;
+    }
+    .cart-icon {
+      width: 23px;
+      height: 20px;
+      position: relative;
+
+      .counter {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: 13px;
+        top: 10px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+
+    .nav-link {
+      position: relative;
+      a {
+        margin: 0 20px;
         color: $white;
-    }
-    .nav-links{
-        display: flex;
-        list-style: none;
-
-
-        .nav-link{
-            position: relative;
-            a{
-                margin: 0 20px;
-                color: $white;
-                font-size: $navlinks-font-size;
-                line-height: $base-line-height;
-                font-family: 'Inter';
-            }
-            a:hover{
-                color: $black;
-            }
-            &:hover{
-                &::after{
-                    content: '';
-                    position: absolute;
-                    bottom: -47px;
-                    left: 12px;
-                    width: 80%;
-                    border-bottom: 5px solid $black;
-
-                }
-            }
-            &.active {
-               &::after{
-                content: '';
-                position: absolute;
-                bottom: -47px;
-                left: 0;
-                width: 80%;
-                border-bottom: 5px solid $black;
-               }
-              }
+        font-size: $navlinks-font-size;
+        line-height: $base-line-height;
+        font-family: "Inter";
+      }
+      a:hover {
+        color: $black;
+      }
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -48px;
+          left: 12px;
+          width: 80%;
+          border-bottom: 5px solid $black;
         }
-    .underline{
-        width: 97px;
-        height: 5px;
-        background-color: $black;
+      }
+      &.active {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -47px;
+          left: 0;
+          width: 80%;
+          border-bottom: 5px solid $black;
+        }
+      }
     }
-
+    .underline {
+      width: 97px;
+      height: 5px;
+      background-color: $black;
     }
+  }
 }

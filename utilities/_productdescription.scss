@@ -1,49 +1,48 @@
-.product-desctiption-section{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.product-desctiption-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 
-    .prod-desc-part{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 30px;
-    }
-    h1{
-        color: $semi-black;
-        font-family: 'Pippins';
-        font-weight: 600;
-        font-size: $desc-title-font-size;
-        line-height: $lg-line-height;
-    }
-    .desc-paragraph{
-        width: 488px;
-        height: 256px;
-    }
-    p{
-        color: $semi-black;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-    }
-    .info-btn{
-        width: 140px;
-            height: 48px;
-            border-radius: 4px;
-            background-color: $white;
-            font-family: 'Poppins';
-            font-weight: 600;
-            color: $orange;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-            border: 1px solid $medium-gray;
-            margin-top: 25px;
-            cursor: pointer;  
-    }
-    img{
-        margin-top: 40px;
-        margin-right: 35px;
-    }
-   
+  .prod-desc-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  h1 {
+    color: $semi-black;
+    font-family: "Pippins";
+    font-weight: 600;
+    font-size: $desc-title-font-size;
+    line-height: $lg-line-height;
+  }
+  .desc-paragraph {
+    width: 488px;
+    height: 256px;
+  }
+  p {
+    color: $semi-black;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+  .info-btn {
+    width: 140px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: $white;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: $orange;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    border: 1px solid $medium-gray;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  img {
+    margin-top: 40px;
+    margin-right: 35px;
+  }
 }

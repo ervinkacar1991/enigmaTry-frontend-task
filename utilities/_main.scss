@@ -1,221 +1,269 @@
-.main-container{
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $medium-gray;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 500px) {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid $medium-gray;
-    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.left-container{
+  .left-container {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     margin-left: 80px;
 
-
-    .links{
-        display: flex;
-        
+    .links {
+      display: flex;
     }
 
-    .links ul{
+    .links ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 5px;
+
+      .link {
+        a {
+          color: $semi-black;
+          font-family: "Inter";
+          font-size: $smal-font-size;
+          line-height: $link-line-height;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    .title {
+      color: $semi-black;
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: $title-font-size;
+      line-height: $title-line-height;
+      margin-top: 30px;
+    }
+
+    .image-container {
+      width: 696px;
+      height: 392px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 36px;
+
+      .bicycle-img {
+        width: 616;
+        height: 370;
+      }
+
+      .image-arrow {
         display: flex;
         justify-content: center;
         align-items: center;
-        list-style: none;
-        padding: 5px;
-    
-        .link {
-           a{
-            color: $semi-black;
-            font-family: 'Inter';
-            font-size: $smal-font-size;
-            line-height: $link-line-height;
-            text-decoration: none;
-            margin-right: 10px;
-           }
-        
-        }
-        img{
-            margin-right: 10px;
-        }
-
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $light-gray;
+      }
     }
-    .title{
-        color: $semi-black;
-        font-family: 'Poppins';
-        font-weight: 600;
-        font-size: $title-font-size;
-        line-height: $title-line-height;
-        margin-top: 30px;
-    }
+    .description-container ul {
+      display: flex;
+      list-style: none;
 
-    .image-container{
-        width: 696px;
-        height: 392px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 36px;
+      .desc-link {
+        margin-top: 60px;
+      }
 
-        .bicycle-img{
-            width: 616;
-            height: 370;
+      .desc-link {
+        a {
+          color: $semi-black;
+          font-family: "Inter";
+          font-size: $base-font-size;
+          font-weight: 600;
+          line-height: $base-line-height;
+          text-decoration: none;
+          margin-right: 16px;
         }
-
-        .image-arrow{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: $light-gray;
-
-           
-        }
-       
+      }
     }
-    .description-container ul{
-        display: flex;
-        list-style: none;
-        
-        .desc-link{
-            margin-top: 60px;
-        }
-
-        .desc-link {
-            a{
-             color: $semi-black;
-             font-family: 'Inter';
-             font-size: $base-font-size;
-             font-weight: 600;
-             line-height: $base-line-height;
-             text-decoration: none;
-             margin-right: 16px;
-            }
-         
-         }
-    }
-
-}
-.right-container{
+  }
+  .right-container {
     margin-top: 80px;
     margin-right: 80px;
     margin-bottom: 50px;
 
-    .right-icons-container{
+    .right-icons-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      .right-side {
         display: flex;
-        justify-content: flex-end;
-        margin-top: 30px;
-        .right-side{
-            display: flex;
-            justify-content: space-evenly;
-           .img{
-            margin-right: 10px;
-           }
-        }
-        .right-icons{
-            color: $semi-black;
-            font-size: $medium-font-size;
-            font-weight: 400;
-            line-height: $icon-line-height;
-            margin-left: 20px;
-        }
-    }
-    .details-container{
-        width: 488px;
-        height: 450px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        background-color: $light-gray;
-        margin-top: 50px;
-        padding: 32px;
+        .img {
+          margin-right: 10px;
+        }
+      }
+      .right-icons {
+        color: $semi-black;
+        font-size: $medium-font-size;
+        font-weight: 400;
+        line-height: $icon-line-height;
+        margin-left: 20px;
+      }
+    }
+    .details-container {
+      width: 488px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: $light-gray;
+      margin-top: 50px;
+      padding: 32px;
 
-        p{
-            color: $semi-black;
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-        }
-        span{
-            color: $orange;
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-        }
-        .details-text{
-            font-family: 'Inter';
-            font-weight: 400;
-            color: $semi-black;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-        }
-       .dropdowns-container{
+      p {
+        color: $semi-black;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+      }
+      span {
+        color: $orange;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+      }
+      .details-text {
+        font-family: "Inter";
+        font-weight: 400;
+        color: $semi-black;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+      }
+      .dropdowns-container {
         display: flex;
         justify-content: space-around;
-        .dropdown{
-            width: 200px;
-            height: 56px;
-            border: 0.5px solid $light-gray;
-            border-radius: 4px 4px 0px 0px;
-            padding: 3px;
-            background-color: $white;
+        .dropdown {
+          width: 200px;
+          height: 56px;
+          display: flex;
+          justify-content: space-between;
+          border: 0.5px solid $light-gray;
+          border-radius: 4px 4px 0px 0px;
+          padding: 3px;
+          margin-right: 5px;
+          background-color: $white;
+
+          .left-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            margin-left: 8px;
+            .drop-paragraph {
+              color: $darkest-gray;
+              font-family: "Inter";
+              font-weight: 400;
+              font-size: $xs-font-size;
+              line-height: $link-line-height;
+            }
+            .desc-paragraph {
+              color: $semi-black;
+              font-family: "Inter";
+              font-weight: 400;
+              font-size: $checkbox-text-size;
+              line-height: $link-line-height;
+            }
+            img {
+              margin-right: 8px;
+            }
+          }
+          .right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            margin-left: 8px;
+            .drop-paragraph {
+              color: $darkest-gray;
+              font-family: "Inter";
+              font-weight: 400;
+              font-size: $xs-font-size;
+              line-height: $link-line-height;
+            }
+            .desc-paragraph {
+              color: $semi-black;
+              font-family: "Inter";
+              font-weight: 400;
+              font-size: $checkbox-text-size;
+              line-height: $link-line-height;
+            }
+            img {
+              margin-right: 8px;
+            }
+          }
         }
-       }
-       .checkbox-container{
+      }
+      .checkbox-container {
         display: flex;
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         gap: 12px;
-        .checkbox{
-            display: flex;
-            
-            align-items: center;
-        }
-        .checkbox-paragraph{
-            font-size: $checkbox-text-size;
-            line-height: $base-line-height;
-            font-family: 'Inter';
-            font-weight: 400;
-            margin-left: 8px;
+        .checkbox {
+          display: flex;
 
-        }      
-      
-       }
-       .buttons-container{
+          align-items: center;
+        }
+        .checkbox-paragraph {
+          font-size: $checkbox-text-size;
+          line-height: $base-line-height;
+          font-family: "Inter";
+          font-weight: 400;
+          margin-left: 8px;
+        }
+      }
+      .buttons-container {
         display: flex;
         gap: 8px;
-        .add-btn{
-            width: 140px;
-            height: 48px;
-            border-radius: 4px;
-            background-color: $green;
-            font-family: 'Poppins';
-            font-weight: 600;
-            color: $white;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-            border: none;
-            cursor: pointer;
+        .add-btn {
+          width: 140px;
+          height: 48px;
+          border-radius: 4px;
+          background-color: $green;
+          font-family: "Poppins";
+          font-weight: 600;
+          color: $white;
+          font-size: $base-font-size;
+          line-height: $base-line-height;
+          border: none;
+          cursor: pointer;
         }
-        .contact-btn{
-            width: 140px;
-            height: 48px;
-            border-radius: 4px;
-            background-color: $white;
-            font-family: 'Poppins';
-            font-weight: 600;
-            color: $green;
-            font-size: $base-font-size;
-            line-height: $base-line-height;
-            border: 1px solid $medium-gray;
-            cursor: pointer;
+        .contact-btn {
+          width: 140px;
+          height: 48px;
+          border-radius: 4px;
+          background-color: $white;
+          font-family: "Poppins";
+          font-weight: 600;
+          color: $green;
+          font-size: $base-font-size;
+          line-height: $base-line-height;
+          border: 1px solid $medium-gray;
+          cursor: pointer;
         }
-       }
+      }
     }
-}
-
+  }
 }
