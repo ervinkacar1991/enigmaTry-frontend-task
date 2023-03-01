@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:wght@300;400;700&family=Orbitron:wght@400;800&family=Rubik:wght@400;500;700&display=swap");
 * {
@@ -17,8 +18,11 @@
 @media screen and (max-width: 500px) {
   .main-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     height: 70px;
   }
 }
@@ -350,6 +354,36 @@
 .main-container .right-container .details-container .checkbox-container .checkbox {
   display: flex;
   align-items: center;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox input[type=checkbox] {
+  display: none;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox label {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 3px;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox input[type=checkbox]:checked + label::before {
+  content: "✓";
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #00A878;
 }
 .main-container .right-container .details-container .checkbox-container .checkbox-paragraph {
   font-size: 14px;
