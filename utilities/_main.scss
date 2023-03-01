@@ -2,10 +2,15 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid $medium-gray;
+    margin-bottom: 20px;
 
 .left-container{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    margin-left: 80px;
+
 
     .links{
         display: flex;
@@ -41,6 +46,7 @@
         font-weight: 600;
         font-size: $title-font-size;
         line-height: $title-line-height;
+        margin-top: 30px;
     }
 
     .image-container{
@@ -49,6 +55,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 36px;
 
         .bicycle-img{
             width: 616;
@@ -72,12 +79,16 @@
         display: flex;
         list-style: none;
         
+        .desc-link{
+            margin-top: 60px;
+        }
 
         .desc-link {
             a{
              color: $semi-black;
              font-family: 'Inter';
              font-size: $base-font-size;
+             font-weight: 600;
              line-height: $base-line-height;
              text-decoration: none;
              margin-right: 16px;
@@ -88,10 +99,14 @@
 
 }
 .right-container{
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
 
     .right-icons-container{
         display: flex;
         justify-content: flex-end;
+        margin-top: 30px;
         .right-side{
             display: flex;
             justify-content: space-evenly;
@@ -104,13 +119,103 @@
             font-size: $medium-font-size;
             font-weight: 400;
             line-height: $icon-line-height;
-            margin-right: 10px;
+            margin-left: 20px;
         }
     }
     .details-container{
         width: 488px;
         height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         background-color: $light-gray;
+        margin-top: 50px;
+        padding: 32px;
+
+        p{
+            color: $semi-black;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+        span{
+            color: $orange;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+        .details-text{
+            font-family: 'Inter';
+            font-weight: 400;
+            color: $semi-black;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+       .dropdowns-container{
+        display: flex;
+        justify-content: space-around;
+        .dropdown{
+            width: 200px;
+            height: 56px;
+            border: 0.5px solid $light-gray;
+            border-radius: 4px 4px 0px 0px;
+            padding: 3px;
+            background-color: $white;
+        }
+       }
+       .checkbox-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        gap: 12px;
+        .checkbox{
+            display: flex;
+            
+            align-items: center;
+        }
+        .checkbox-paragraph{
+            font-size: $checkbox-text-size;
+            line-height: $base-line-height;
+            font-family: 'Inter';
+            font-weight: 400;
+            margin-left: 8px;
+
+        }      
+      
+       }
+       .buttons-container{
+        display: flex;
+        gap: 8px;
+        .add-btn{
+            width: 140px;
+            height: 48px;
+            border-radius: 4px;
+            background-color: $green;
+            font-family: 'Poppins';
+            font-weight: 600;
+            color: $white;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-btn{
+            width: 140px;
+            height: 48px;
+            border-radius: 4px;
+            background-color: $white;
+            font-family: 'Poppins';
+            font-weight: 600;
+            color: $green;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+            border: 1px solid $medium-gray;
+            cursor: pointer;
+        }
+       }
     }
 }
+
 }

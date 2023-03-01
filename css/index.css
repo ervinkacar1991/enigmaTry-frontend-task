@@ -118,10 +118,14 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 20px;
 }
 .main-container .left-container {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  margin-left: 80px;
 }
 .main-container .left-container .links {
   display: flex;
@@ -150,6 +154,7 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
+  margin-top: 30px;
 }
 .main-container .left-container .image-container {
   width: 696px;
@@ -157,6 +162,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 36px;
 }
 .main-container .left-container .image-container .bicycle-img {
   width: 616;
@@ -175,17 +181,27 @@
   display: flex;
   list-style: none;
 }
+.main-container .left-container .description-container ul .desc-link {
+  margin-top: 60px;
+}
 .main-container .left-container .description-container ul .desc-link a {
   color: #1E1E1E;
   font-family: "Inter";
   font-size: 16px;
+  font-weight: 600;
   line-height: 24px;
   text-decoration: none;
   margin-right: 16px;
 }
+.main-container .right-container {
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
 .main-container .right-container .right-icons-container {
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 .main-container .right-container .right-icons-container .right-side {
   display: flex;
@@ -199,10 +215,134 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
-  margin-right: 10px;
+  margin-left: 20px;
 }
 .main-container .right-container .details-container {
   width: 488px;
   height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #F2F2F2;
+  margin-top: 50px;
+  padding: 32px;
+}
+.main-container .right-container .details-container p {
+  color: #1E1E1E;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main-container .right-container .details-container span {
+  color: #FE5E41;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main-container .right-container .details-container .details-text {
+  font-family: "Inter";
+  font-weight: 400;
+  color: #1E1E1E;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main-container .right-container .details-container .dropdowns-container {
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .right-container .details-container .dropdowns-container .dropdown {
+  width: 200px;
+  height: 56px;
+  border: 0.5px solid #F2F2F2;
+  border-radius: 4px 4px 0px 0px;
+  padding: 3px;
+  background-color: #FFFFFF;
+}
+.main-container .right-container .details-container .checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox {
+  display: flex;
+  align-items: center;
+}
+.main-container .right-container .details-container .checkbox-container .checkbox-paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter";
+  font-weight: 400;
+  margin-left: 8px;
+}
+.main-container .right-container .details-container .buttons-container {
+  display: flex;
+  gap: 8px;
+}
+.main-container .right-container .details-container .buttons-container .add-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #00A878;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+.main-container .right-container .details-container .buttons-container .contact-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #00A878;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #DEDEDE;
+  cursor: pointer;
+}
+
+.product-desctiption-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.product-desctiption-section .prod-desc-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+}
+.product-desctiption-section h1 {
+  color: #1E1E1E;
+  font-family: "Pippins";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+.product-desctiption-section p {
+  color: #1E1E1E;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-desctiption-section .info-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #FE5E41;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #DEDEDE;
+  cursor: pointer;
 }
