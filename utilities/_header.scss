@@ -19,6 +19,7 @@
     display: none;
     @media screen and (max-width: 1000px) {
       display: block;
+      margin-right: 10px;
 
       img {
         margin-right: 20px;
@@ -32,7 +33,7 @@
     align-items: center;
 
     .logo {
-      margin-right: 50px;
+      margin-right: 20px;
       @media screen and (max-width: 500px) {
         img {
           width: 105px;
@@ -109,7 +110,7 @@
 
     .nav-link {
       position: relative;
-      margin-right: 10px;
+      margin-right: 9px;
 
       a {
         margin: 0 20px;

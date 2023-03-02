@@ -53,12 +53,18 @@
 
 @media screen and (max-width: 900px) {
   .product-desctiption-section {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
+
+    img {
+      width: 100%;
+      margin-top: 30px;
+    }
   }
   .desc-paragraph {
     width: 100% !important;
     height: unset !important;
     font-size: $mobile-desctitle-fs;
     line-height: $mobile-desctitle-lh;
+    margin-top: 20px;
   }
 }

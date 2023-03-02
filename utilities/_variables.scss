@@ -11,20 +11,26 @@ $darkest-gray: #6e6e6e;
 $black: black;
 
 //font sizes
+$xs-font-size: 11px;
+$smal-font-size: 13px;
 $placeholder-font-size: 14px;
 $navlinks-font-size: 18px;
 $desc-title-font-size: 28px;
 $title-font-size: 40px;
-$mobile-title-fs: 28px;
-$mobile-desctitle-fs: 24px;
-$xs-font-size: 11px;
-$smal-font-size: 13px;
 $checkbox-text-size: 14px;
 $base-font-size: 16px;
 $medium-font-size: 20px;
+
+// line height
+
 $link-line-height: 18px;
 $icon-line-height: 20px;
 $base-line-height: 24px;
 $mobile-desctitle-lh: 32px;
 $lg-line-height: 36px;
 $title-line-height: 48px;
+
+// mobile font size
+
+$mobile-title-fs: 28px;
+$mobile-desctitle-fs: 24px;
