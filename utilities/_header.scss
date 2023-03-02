@@ -119,10 +119,12 @@
         line-height: $base-line-height;
         font-family: "Inter";
       }
-      a:hover {
+      a:hover,
+      .active {
         color: $black;
       }
-      &:hover {
+      &:hover,
+      .active {
         &::after {
           content: "";
           position: absolute;

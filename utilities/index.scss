@@ -1,32 +1,12 @@
 //variables
 
-@import 'variables';
+@import "variables";
 
 //base & layout
 
-@import 'base';
-@import 'header';
-@import 'main';
-@import 'productdescription';
-@import 'table';
-
-
-
-
-//colors
-
-
-
-//components(button, card, navbar)
-
-
-
-//utilities (margin, padding..)
-
-
-
-
-
-
-
-
+@import "base";
+@import "header";
+@import "main";
+@import "productdescription";
+@import "table";
+@import "modal";

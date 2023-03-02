@@ -3,9 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/index.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>Enigmatry Frontend Test</title>
   </head>
   <body>
     <header class="main-header">
@@ -20,7 +19,7 @@
         <div class="main-nav">
           <nav>
             <ul class="nav-links">
-              <li class="nav-link"><a href="#">Products</a></li>
+              <li class="nav-link"><a class="active" href="#">Products</a></li>
               <li class="nav-link"><a href="#">Services</a></li>
               <li class="nav-link"><a href="#">About us</a></li>
               <li class="nav-link"><a href="#">Contact</a></li>
@@ -62,6 +61,23 @@
           </ul>
         </div>
         <h1 class="title">Product name lorem ipsum</h1>
+        <div class="right-icons-container mobile-icons-container">
+          <div class="right-side .right-side-actions">
+            <div class="right-icons">
+              <img src="./images/arrow-left.png" alt="" />
+            </div>
+            <div class="right-icons">
+              <img src="./images/arrow-right.png" alt="" />
+            </div>
+            <div class="right-icons">
+              <img src="./images/heartt.png" alt="" />
+            </div>
+            <div class="right-icons">
+              <img src="./images/share-nodes.png" alt="" />
+            </div>
+          </div>
+        </div>
+
         <div class="image-container">
           <div class="image-arrow">
             <img src="./images/chevron-left.png" alt="" />
@@ -96,6 +112,7 @@
             </div>
           </div>
         </div>
+
         <div class="details-container">
           <p>In stock<span> - only 2 left</span></p>
           <p class="details-text">
@@ -124,23 +141,29 @@
               </div>
             </div>
           </div>
-          <div class="checkbox-container">
-            <div class="checkbox">
-              <input type="checkbox" id="myCheckbox" />
-              <label for="myCheckbox">Add option lorem ipsum</label>
-            </div>
-
-            <div class="checkbox">
-              <input type="checkbox" id="myCheckbox" />
-              <label for="myCheckbox"
-                >Add option output velit como totam rem operiam</label
-              >
-            </div>
+          <div class="checkboxes">
+            <label class="checkbox-container">
+              Add option lorem ipsum
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              Add option output velit como totam rem operiam
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div class="buttons-container">
             <button class="add-btn">Add to cart</button>
-            <button class="contact-btn">Contact us</button>
+            <button class="contact-btn" id="openModalBtn">Contact us</button>
           </div>
+        </div>
+        <div class="description-container mobile-description-container">
+          <ul>
+            <li class="desc-link"><a href="">Description</a></li>
+            <li class="desc-link"><a href="">Specifications</a></li>
+            <li class="desc-link"><a href="">Reviews (7)</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -230,5 +253,41 @@
         </table>
       </div>
     </section>
+    <div class="modal-overlay" id="modal">
+      <div class="modal">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <h1>Contact us</h1>
+              <span class="close-modal" id="close-modal"
+                ><img src="./images/times.png" alt=""
+              /></span>
+            </div>
+            <div class="modal-body">
+              <p>We’ll get back to you as soon as possible.</p>
+              <div class="modal-input">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Your e-mail" />
+              </div>
+              <div class="modal-input">
+                <label for="email"></label>
+                <textarea
+                  name=""
+                  id="email"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="send" type="submit">Send message</button>
+              <button id="cancel" class="close-modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script/modal.js"></script>
   </body>
 </html>

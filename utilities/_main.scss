@@ -78,54 +78,12 @@
         cursor: pointer;
       }
     }
-    .description-container ul {
-      display: flex;
-      list-style: none;
-      @media screen and (max-width: 500px) {
-        justify-content: center;
-      }
-
-      .desc-link {
-        margin-top: 60px;
-      }
-
-      .desc-link {
-        a {
-          color: $semi-black;
-          font-family: "Inter";
-          font-size: $base-font-size;
-          font-weight: 600;
-          line-height: $base-line-height;
-          text-decoration: none;
-          margin-right: 16px;
-        }
-      }
-    }
   }
   .right-container {
     margin-top: 80px;
     margin-right: 80px;
     margin-bottom: 50px;
 
-    .right-icons-container {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 30px;
-      .right-side {
-        display: flex;
-        justify-content: space-evenly;
-        .img {
-          margin-right: 10px;
-        }
-      }
-      .right-icons {
-        color: $semi-black;
-        font-size: $medium-font-size;
-        font-weight: 400;
-        line-height: $icon-line-height;
-        margin-left: 20px;
-      }
-    }
     .details-container {
       width: 488px;
       height: 450px;
@@ -304,6 +262,54 @@
   }
 }
 
+.description-container ul {
+  display: flex;
+  list-style: none;
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
+
+  .desc-link {
+    margin-top: 60px;
+  }
+
+  .desc-link {
+    a {
+      color: $semi-black;
+      font-family: "Inter";
+      font-size: $base-font-size;
+      font-weight: 600;
+      line-height: $base-line-height;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+  }
+}
+
+.right-icons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  .right-side {
+    display: flex;
+    justify-content: space-evenly;
+    .img {
+      margin-right: 10px;
+    }
+  }
+  .right-icons {
+    color: $semi-black;
+    font-size: $medium-font-size;
+    font-weight: 400;
+    line-height: $icon-line-height;
+    margin-left: 20px;
+  }
+}
+.mobile-icons-container,
+.mobile-description-container {
+  display: none !important;
+}
+
 @media screen and (max-width: 900px) {
   .main-container {
     flex-direction: column;
@@ -339,4 +345,99 @@
     margin: 4px 0 !important;
     margin-top: 10px !important;
   }
+  .description-container,
+  .right-icons-container {
+    display: none !important;
+  }
+  .mobile-icons-container,
+  .mobile-description-container {
+    display: flex !important  ;
+    justify-content: flex-end;
+  }
+  .mobile-description-container {
+    justify-content: center;
+  }
+  .mobile-icons-container {
+    margin-top: -20px;
+    margin-right: 30px;
+  }
+  .right-side-actions {
+    width: 70% !important;
+  }
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: $placeholder-font-size;
+  line-height: $base-line-height;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: $light-gray;
+  border: 1px solid $dark-gray;
+  border-radius: 2px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: $dark-gray;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: $green;
+  border: 1px solid $green;
+
+  border-radius: 2px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
