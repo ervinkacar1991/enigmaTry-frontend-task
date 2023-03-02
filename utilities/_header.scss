@@ -8,10 +8,9 @@
 
   @media screen and (max-width: 500px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     height: 70px;
   }
@@ -20,6 +19,10 @@
     display: none;
     @media screen and (max-width: 1000px) {
       display: block;
+
+      img {
+        margin-right: 20px;
+      }
     }
   }
 
@@ -29,7 +32,13 @@
     align-items: center;
 
     .logo {
-      margin-right: 48px;
+      margin-right: 50px;
+      @media screen and (max-width: 500px) {
+        img {
+          width: 105px;
+          height: 28px;
+        }
+      }
     }
   }
 
@@ -100,6 +109,8 @@
 
     .nav-link {
       position: relative;
+      margin-right: 10px;
+
       a {
         margin: 0 20px;
         color: $white;

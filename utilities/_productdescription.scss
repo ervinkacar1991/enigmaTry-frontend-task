@@ -40,9 +40,25 @@
     border: 1px solid $medium-gray;
     margin-top: 25px;
     cursor: pointer;
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
   }
   img {
     margin-top: 40px;
     margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .product-desctiption-section {
+    flex-direction: column !important;
+  }
+  .desc-paragraph {
+    width: 100% !important;
+    height: unset !important;
+    font-size: $mobile-desctitle-fs;
+    line-height: $mobile-desctitle-lh;
   }
 }
