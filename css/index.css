@@ -81,7 +81,7 @@
 }
 .main-header .icons-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   line-height: 18px;
 }
 .main-header .icons-container .user-icon img {
@@ -97,12 +97,20 @@
   height: 20px;
   position: relative;
 }
-.main-header .icons-container .cart-icon .counter {
-  width: 15px;
-  height: 15px;
+.main-header .icons-container .cart-icon .counter-container .counter {
+  width: 18px;
+  height: 18px;
   position: absolute;
   left: 13px;
-  top: 10px;
+  top: 8px;
+}
+.main-header .icons-container .cart-icon .counter-container span {
+  position: absolute;
+  color: #ffffff;
+  left: 18px;
+  top: 8px;
+  font-size: 13px;
+  z-index: 100;
 }
 .main-header a {
   text-decoration: none;
