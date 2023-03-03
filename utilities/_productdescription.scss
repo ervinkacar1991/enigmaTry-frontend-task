@@ -54,6 +54,11 @@
 @media screen and (max-width: 900px) {
   .product-desctiption-section {
     flex-direction: column-reverse !important;
+    .prod-desc-part {
+      button {
+        margin-top: 40px;
+      }
+    }
 
     img {
       width: 100%;
@@ -65,5 +70,9 @@
     height: unset !important;
     font-size: $mobile-desctitle-fs;
     line-height: $mobile-desctitle-lh;
+
+    p {
+      margin-top: 35px;
+    }
   }
 }

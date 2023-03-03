@@ -643,6 +643,9 @@ label {
   .product-desctiption-section {
     flex-direction: column-reverse !important;
   }
+  .product-desctiption-section .prod-desc-part button {
+    margin-top: 40px;
+  }
   .product-desctiption-section img {
     width: 100%;
     margin-top: 30px;
@@ -652,6 +655,9 @@ label {
     height: unset !important;
     font-size: 24px;
     line-height: 32px;
+  }
+  .desc-paragraph p {
+    margin-top: 35px;
   }
 }
 .table-section {
